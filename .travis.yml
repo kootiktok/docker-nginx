@@ -7,4 +7,4 @@ before_install:
   - docker build -t kootiktok/docker-nginx -f Dockerfile.dev .
 
 script:
-  - docker run e CI=true kootiktok/docker-nginx npm run test -- --coverage
+  - docker run -e CI=true kootiktok/docker-nginx npm run test -- --coverage
